@@ -1,0 +1,82 @@
+{
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit",
+    },
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+  },
+  "editor.smoothScrolling": false,
+  "editor.cursorSmoothCaretAnimation": "off",
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.packageIndexDepths": [
+    { "name": "rest_framework", "depth": 3 },
+    { "name": "django", "depth": 3 },
+  ],
+  // "vscode-neovim.logLevel": "error",
+  // "vscode-neovim.revealOutputOn": "error",
+  "vscode-neovim.neovimInitVimPaths.win32": "$HOME/AppData/Local/nvim/init.lua",
+  "git.autofetch": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "editor.guides.bracketPairs": true,
+  "editor.autoClosingBrackets": "always",
+  "editor.tabCompletion": "on",
+  "reactSnippets.settings.importReactOnTop": false,
+  "js/ts.updateImportsOnFileMove.enabled": "always",
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.tree.indent": 20,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorCustomizations": {
+    "tree.indentGuidesStroke": "#007ACC",
+  },
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell",
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe",
+      ],
+      "args": [],
+      "icon": "terminal-cmd",
+    },
+    "Git Bash": {
+      "path": "C:\\Program Files\\Git\\bin\\bash.exe",
+      "args": ["--login", "-i"],
+    },
+  },
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "gitlens.views.branches.branches.compact": false,
+  "terminal.integrated.commandsToSkipShell": [
+    "workbench.view.explorer",
+    "workbench.action.focusActiveEditorGroup",
+    "workbench.actions.view.problems",
+    "workbench.action.toggleSidebarVisibility",
+  ],
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1,
+  },
+  "vscode-neovim.compositeKeys": {
+    "jk": {
+      "command": "vscode-neovim.escape",
+    },
+  },
+  "vscode-neovim.compositeTimeout": 200,
+  "editor.lineNumbers": "relative",
+  "window.confirmBeforeClose": "always",
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  // "editor.snippetSuggestions": "top",
+  "editor.snippetSuggestions": "inline",
+  "window.customMenuBarAltFocus": false,
+  // "titleBar.titleBarMnemonicToggle": false,
+  "window.titleBarStyle": "native",
+  "python.analysis.typeCheckingMode": "basic",
+  "vsicons.dontShowNewVersionMessage": true,
+  "editor.wordWrap": "on",
+  "workbench.secondarySideBar.defaultVisibility": "visible",
+  "python.analysis.indexing": true,
+}

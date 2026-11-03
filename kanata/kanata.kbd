@@ -1,0 +1,21 @@
+(defcfg
+  process-unmapped-keys yes
+)
+
+(defsrc
+  caps lshft rshft
+)
+
+(defalias
+  c-esc (tap-hold 200 200 esc lctl)
+)
+
+(defchords shift-caps 500
+  (lshft rshft) caps
+)
+
+(deflayer base
+  @c-esc
+  (multi lshft (chord shift-caps lshft))
+  (multi rshft (chord shift-caps rshft))
+)
