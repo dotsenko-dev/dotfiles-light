@@ -1,6 +1,7 @@
 {
   "[python]": {
     "editor.codeActionsOnSave": {
+      "source.fixAll.ruff": "explicit",
       "source.organizeImports": "explicit",
     },
     "editor.defaultFormatter": "charliermarsh.ruff",
@@ -13,8 +14,6 @@
     { "name": "rest_framework", "depth": 3 },
     { "name": "django", "depth": 3 },
   ],
-  // "vscode-neovim.logLevel": "error",
-  // "vscode-neovim.revealOutputOn": "error",
   "vscode-neovim.neovimInitVimPaths.win32": "$HOME/AppData/Local/nvim/init.lua",
   "git.autofetch": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -69,14 +68,13 @@
   "editor.lineNumbers": "relative",
   "window.confirmBeforeClose": "always",
   "editor.acceptSuggestionOnCommitCharacter": false,
-  // "editor.snippetSuggestions": "top",
   "editor.snippetSuggestions": "inline",
   "window.customMenuBarAltFocus": false,
-  // "titleBar.titleBarMnemonicToggle": false,
   "window.titleBarStyle": "native",
   "python.analysis.typeCheckingMode": "basic",
   "vsicons.dontShowNewVersionMessage": true,
   "editor.wordWrap": "on",
   "workbench.secondarySideBar.defaultVisibility": "visible",
   "python.analysis.indexing": true,
+  "cSpell.userWords": ["mypy"],
 }

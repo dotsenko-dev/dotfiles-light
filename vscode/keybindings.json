@@ -146,7 +146,7 @@
   },
 
   // --- ІНШЕ ---
-  // Перевірка коміту
+  // Перевірка коміту - дописав ось це
   {
     "key": "alt+q",
     "command": "workbench.action.quickchat.toggle",

@@ -25,5 +25,6 @@ ms-vscode.remote-repositories
 patbenatar.advanced-new-file
 quicktype.quicktype
 streetsidesoftware.code-spell-checker
+streetsidesoftware.code-spell-checker-ukrainian
 usernamehw.errorlens
 vscode-icons-team.vscode-icons
