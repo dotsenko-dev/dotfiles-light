@@ -76,5 +76,10 @@
   "editor.wordWrap": "on",
   "workbench.secondarySideBar.defaultVisibility": "visible",
   "python.analysis.indexing": true,
-  "cSpell.userWords": ["mypy"],
+  "cSpell.userWords": ["mypy", "pycache", "venv", "коміт", "коміту", "папку"],
+  "cSpell.language": "en,uk",
+  "git.confirmSync": false,
+  "cSpell.enabledFileTypes": {
+    "pip-requirements": false,
+  },
 }
