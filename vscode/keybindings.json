@@ -50,6 +50,11 @@
     "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly",
   },
   {
+    "key": "alt+enter",
+    "command": "editor.action.inlineSuggest.commit",
+    "when": "editorTextFocus && (inlineSuggestionVisible || inlineEditIsVisible)",
+  },
+  {
     "key": "ctrl+oem_period",
     "command": "-editor.action.quickFix",
   },
