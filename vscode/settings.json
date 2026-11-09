@@ -1,4 +1,29 @@
 {
+  // ───────────── Editor ─────────────
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.autoClosingBrackets": "always",
+  "editor.cursorSmoothCaretAnimation": "off",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.guides.bracketPairs": true,
+  "editor.smoothScrolling": false,
+  "editor.snippetSuggestions": "inline",
+  "editor.tabCompletion": "on",
+  "editor.wordWrap": "on",
+
+  // ───────────── Files ─────────────
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+
+  // ───────────── Git ─────────────
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "gitlens.views.branches.branches.compact": false,
+
+  // ───────────── Copilot ─────────────
+  "editor.inlineSuggest.enabled": false,
+  "github.copilot.nextEditSuggestions.enabled": true,
+
+  // ───────────── Python / Ruff ─────────────
   "[python]": {
     "editor.codeActionsOnSave": {
       "source.fixAll.ruff": "explicit",
@@ -7,34 +32,39 @@
     "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.formatOnSave": true,
   },
-  "editor.smoothScrolling": false,
-  "editor.cursorSmoothCaretAnimation": "off",
   "python.analysis.autoImportCompletions": true,
+  "python.analysis.indexing": true,
   "python.analysis.packageIndexDepths": [
-    { "name": "rest_framework", "depth": 3 },
     { "name": "django", "depth": 3 },
+    { "name": "rest_framework", "depth": 3 },
   ],
-  "vscode-neovim.neovimInitVimPaths.win32": "$HOME/AppData/Local/nvim/init.lua",
-  "git.autofetch": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 1000,
-  "editor.guides.bracketPairs": true,
-  "editor.autoClosingBrackets": "always",
-  "editor.tabCompletion": "on",
-  "reactSnippets.settings.importReactOnTop": false,
+  "python.analysis.typeCheckingMode": "basic",
+
+  // ───────────── JS / TS / React ─────────────
   "js/ts.updateImportsOnFileMove.enabled": "always",
-  "workbench.tree.renderIndentGuides": "always",
-  "workbench.tree.indent": 20,
-  "workbench.iconTheme": "vscode-icons",
-  "workbench.colorCustomizations": {
-    "tree.indentGuidesStroke": "#007ACC",
+  "reactSnippets.settings.importReactOnTop": false,
+
+  // ───────────── Neovim ─────────────
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1,
   },
-  "terminal.integrated.profiles.windows": {
-    "PowerShell": {
-      "source": "PowerShell",
-      "icon": "terminal-powershell",
+  "vscode-neovim.compositeKeys": {
+    "jk": {
+      "command": "vscode-neovim.escape",
     },
+  },
+  "vscode-neovim.compositeTimeout": 200,
+  "vscode-neovim.neovimInitVimPaths.win32": "$HOME/AppData/Local/nvim/init.lua",
+
+  // ───────────── Terminal ─────────────
+  "terminal.integrated.commandsToSkipShell": [
+    "workbench.action.focusActiveEditorGroup",
+    "workbench.action.toggleSidebarVisibility",
+    "workbench.actions.view.problems",
+    "workbench.view.explorer",
+  ],
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.profiles.windows": {
     "Command Prompt": {
       "path": [
         "${env:windir}\\Sysnative\\cmd.exe",
@@ -47,38 +77,30 @@
       "path": "C:\\Program Files\\Git\\bin\\bash.exe",
       "args": ["--login", "-i"],
     },
-  },
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "gitlens.views.branches.branches.compact": false,
-  "terminal.integrated.commandsToSkipShell": [
-    "workbench.view.explorer",
-    "workbench.action.focusActiveEditorGroup",
-    "workbench.actions.view.problems",
-    "workbench.action.toggleSidebarVisibility",
-  ],
-  "extensions.experimental.affinity": {
-    "asvetliakov.vscode-neovim": 1,
-  },
-  "vscode-neovim.compositeKeys": {
-    "jk": {
-      "command": "vscode-neovim.escape",
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell",
     },
   },
-  "vscode-neovim.compositeTimeout": 200,
-  "editor.lineNumbers": "relative",
+
+  // ───────────── Window ─────────────
   "window.confirmBeforeClose": "always",
-  "editor.acceptSuggestionOnCommitCharacter": false,
-  "editor.snippetSuggestions": "inline",
   "window.customMenuBarAltFocus": false,
   "window.titleBarStyle": "native",
-  "python.analysis.typeCheckingMode": "basic",
+
+  // ───────────── Workbench / UI ─────────────
   "vsicons.dontShowNewVersionMessage": true,
-  "editor.wordWrap": "on",
+  "workbench.colorCustomizations": {
+    "tree.indentGuidesStroke": "#007ACC",
+  },
+  "workbench.iconTheme": "vscode-icons",
   "workbench.secondarySideBar.defaultVisibility": "visible",
-  "python.analysis.indexing": true,
-  "cSpell.language": "en,uk",
-  "git.confirmSync": false,
+  "workbench.tree.indent": 20,
+  "workbench.tree.renderIndentGuides": "always",
+
+  // ───────────── Spell checker ─────────────
   "cSpell.enabledFileTypes": {
     "pip-requirements": false,
   },
+  "cSpell.language": "en,uk",
 }

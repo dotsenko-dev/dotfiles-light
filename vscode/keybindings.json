@@ -167,4 +167,8 @@
     "command": "search.action.focusPreviousSearchResult",
     "when": "hasSearchResult",
   },
+  {
+    "key": "alt+/",
+    "command": "editor.action.inlineSuggest.trigger",
+  },
 ]
