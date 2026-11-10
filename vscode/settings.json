@@ -9,6 +9,7 @@
   "editor.snippetSuggestions": "inline",
   "editor.tabCompletion": "on",
   "editor.wordWrap": "on",
+  "editor.hover.enabled": "off",
 
   // ───────────── Files ─────────────
   "files.autoSave": "afterDelay",
