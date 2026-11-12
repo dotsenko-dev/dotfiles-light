@@ -1,9 +1,7 @@
 asvetliakov.vscode-neovim
 batisteo.vscode-django
 charliermarsh.ruff
-cweijan.dbclient-jdbc
 cweijan.vscode-database-client2
-cweijan.vscode-mysql-client2
 dbaeumer.vscode-eslint
 dkundel.vscode-new-file
 dsznajder.es7-react-js-snippets
