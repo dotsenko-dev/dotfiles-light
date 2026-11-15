@@ -40,6 +40,11 @@ backup "$HOME/.config/kanata" kanata
 mkdir -p "$HOME/.config/kanata"
 cp "$HERE/kanata/kanata.kbd" "$HOME/.config/kanata/"
 
+echo "== cSpell (словник) =="
+backup "$HOME/.config/cspell/my-words.txt" cspell
+mkdir -p "$HOME/.config/cspell"
+cp "$HERE/cspell/my-words.txt" "$HOME/.config/cspell/"
+
 echo "Готово."
 [ -d "$BACKUP" ] && echo "Попередні файли збережено в $BACKUP"
 echo "Kanata запускай лише якщо це дозволено політикою компанії."
