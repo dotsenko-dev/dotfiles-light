@@ -104,4 +104,13 @@
     "pip-requirements": false,
   },
   "cSpell.language": "en,uk",
+  // власний словник поза проєктами (слова йдуть у файл, а не в settings.json)
+  "cSpell.customDictionaries": {
+    "my-words": {
+      "name": "my-words",
+      "path": "~/.config/cspell/my-words.txt",
+      "addWords": true,
+      "scope": "user",
+    },
+  },
 }
