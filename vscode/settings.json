@@ -113,4 +113,8 @@
       "scope": "user",
     },
   },
+  // не перевіряти згенеровані Django-ключі
+  "cSpell.ignoreRegExpList": [
+    "/django-insecure-[^\"\\s]*/",
+  ],
 }
