@@ -40,6 +40,8 @@
     { "name": "rest_framework", "depth": 3 },
   ],
   "python.analysis.typeCheckingMode": "basic",
+  "python.envFile": "",
+  "python.terminal.useEnvFile": false,
 
   // ───────────── JS / TS / React ─────────────
   "js/ts.updateImportsOnFileMove.enabled": "always",
@@ -117,4 +119,8 @@
   "cSpell.ignoreRegExpList": [
     "/django-insecure-[^\"\\s]*/",
   ],
+
+  // ───────────── Docker ─────────────
+  // підказки для Compose дає лише Docker DX, а старий сервіс Container Tools вимкнено (щоб не було дублів)
+  "containers.enableComposeLanguageService": false,
 }

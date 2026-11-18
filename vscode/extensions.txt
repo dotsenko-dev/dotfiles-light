@@ -4,6 +4,7 @@ charliermarsh.ruff
 cweijan.vscode-database-client2
 dbaeumer.vscode-eslint
 dkundel.vscode-new-file
+docker.docker
 dsznajder.es7-react-js-snippets
 eamodio.gitlens
 esbenp.prettier-vscode
