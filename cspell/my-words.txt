@@ -1,3 +1,4 @@
+Browsable
 charliermarsh
 contenttypes
 djangorestframework
